@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{fontspec}
+
+%
+% This file is a sample tex file to illustrate use of
+% XeTeX in typesetting a Sinhala document.
+% Asanka Sayakkara, 2016
+% Based on the example from Golam Mortuza Hossain, 2008
+
+%
+% Define fonts that you want to use
+%
+
+\font\serif="FreeSerif:script=sinh"
+\font\serifbb="FreeSerif:script=sinh" at 24pt
+\font\serifsection="FreeSerif:script=sinh" at 16pt
+\font\deffont="FreeSerif:script=sinh" at 14pt
+%\font\mukti="Mukti Narrow Bold:script=beng"
+
+%
+% "script=sinh" in above lines ensures that appropriate
+% complex text rendering engines are used for proper
+% rendering of Sinhala.
+%
+
+\title{\bf\serifbb මාතෘකාව මෙතන ලියන්න}
+\author{\bf\serif අසංක සායක්කාර}
+\date{2016-08-06}
+\newcommand{\edition}{Second Edition} % Book edition
+
+\begin{document}
+
+\deffont %Default font used for the document
+\maketitle
+
+\section{\textbf{\serifsection සිංහල}}
+
+මේ මම සිංහලෙන් සකස් කල ලිපියක්. මෙය සකස් කිරිඉමට මම ලේටෙක් මෘදුකාංගය පාවිච්චි කලා. එය ඉතාම ප්‍රයෝජනවත් මෙවලමක් මට.
+
+\section{English}
+
+Some English here and there.
+
+\end{document}
